@@ -399,10 +399,12 @@ footer div h6{
 }
 
 
-/* @media only screen and (min-width:440px) and (max-width:767px) {
-  
+ @media only screen and (min-width:440px) and (max-width:767px) {
+  .contactus .section-details img{
+    width: 18%;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:991px) {
+/* @media only screen and (min-width:768px) and (max-width:991px) {
 
-} */
+}  */
