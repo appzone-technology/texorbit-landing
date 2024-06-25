@@ -1,11 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/a85976799f11330f194b1dc04c954666?family=Bahij+TheSansArabic+Plain);
 body {
   padding: 0%;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Cairo", sans-serif;
+  font-family: "Bahij TheSansArabic Plain";
 }
 p,
-h1,
+h1,h2,
 h3,
 h4,h6 {
   margin: 0;
@@ -33,6 +34,7 @@ header {
   /* height: 100vh; */
 }
 nav {
+  padding-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -84,42 +86,59 @@ header .main-img div .btn-container button.apple{
   color:rgba(255, 255, 255, 1);
   background-color:rgba(0, 0, 0, 1) ;
 }
-/* header .main-img .imgs-container img{
+header .main-img .imgs-container{
+    width: 60%;
+    margin: auto;
+}
+header .main-img .imgs-container img{
     width: 100%;
-} */
+}
 
 .goales {
   /* margin-top: 35%; */
+}
+.goales .section-title{
+
 }
 .goales .section-title h1,
 .services .section-title h1,
 .sections .section-title h1 ,
 .feelbacks .section-title h1 ,
 .contactus .section-title h1{
+  margin-bottom: 50px;
   text-align: center;
-  background: -webkit-linear-gradient(right, #ff1a62, #f8a013);
+  background: -webkit-linear-gradient(right ,#ff1a62, #f8a013);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 .goales .details-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 120px;
+  gap: 60px;
 }
 .goales .details-container .list {
   width: 50%;
 }
+.goales .details-container .list ol{
+  margin: 0;
+  padding: 0%;
+}
 .goales .details-container .list li {
   background-image: linear-gradient(to right, #ffffff, #fff5f5);
   list-style-type: none;
-  padding: 20px 50px;
-  border-radius: 120px;
+  padding: 15px 30px;
+  border-radius: 90px;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  align-items: center;
+  /*justify-content: space-between;
+  */align-items: center;
   gap: 25px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
 }
 .goales .details-container .list .even-li {
   background-image: linear-gradient(to left, #ffffff, #fff5f5);
@@ -138,7 +157,7 @@ header .main-img div .btn-container button.apple{
 .goales .details-container .list li .li-marker,
 .services .list ol li .li-marker {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 10px;
   transform: rotate(45deg);
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -166,7 +185,17 @@ header .main-img div .btn-container button.apple{
 .details-img img {
   width: 100%;
 }
-
+@media only screen and (min-width:400px) and (max-width:767px) {
+  .goales .details-container {
+    flex-direction: column-reverse;
+  }
+  .goales .details-container .list {
+    width: 100%;
+  }
+  .details-img {
+    width: 100%;
+  }
+}
 .services,
 .feelbacks {
   background-color: rgba(245, 248, 255, 1);
@@ -174,7 +203,7 @@ header .main-img div .btn-container button.apple{
   padding: 50px 0px;
 }
 .services .btn-container {
-  margin-top: 32px;
+  margin: 32px 0 ;
   text-align: center;
 }
 .services .btn-container button {
@@ -199,17 +228,20 @@ header .main-img div .btn-container button.apple{
   color: #ffffff;
 }
 .services .list ol {
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 20px;
 }
 .services .list ol li {
-  height: 160px;
+  min-height: 100px;
   background-color: #ffffff;
-  width: 35%;
-  padding: 0px 50px;
+  width: 40%;
+  padding: 20px 30px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -219,9 +251,8 @@ header .main-img div .btn-container button.apple{
   display: flex;
   align-items: center;
   gap: 25px;
-  /*justify-content: center;
-   */:;
-}
+  /*justify-content: center;*/
+  }
 .services .list ol li .li-marker {
   background-image: linear-gradient(to right, #ff1a62, #f8a013);
   color: #ffffff;
@@ -235,20 +266,42 @@ header .main-img div .btn-container button.apple{
   font-weight: 500;
 }
 
+@media only screen and (min-width:400px) and (max-width:767px) {
+  .services .list ol {
+    flex-direction: column;
+  }
+  .services .list ol li{
+    width: 85%;
+  }
+
+}
 .sections .container{
-  margin-top:75px;
+  /* margin-top:75px; */
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 25px;
 
 }
+
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+  .sections .container{flex-direction: column;
+  justify-content: center;}
+  .sections .container .section-details {
+    width: 85% !important;
+    
+  }
+}
+
+
 .sections .container .section-details {
+  width: 30%;
     background-color: #F9F9F9;
     text-align: center;
     padding: 25px;
-    height: 450px;
-    max-height: 450px;
+    min-height: 300px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -273,7 +326,7 @@ header .main-img div .btn-container button.apple{
 .sections .container .section-details div h2 {
   font-weight: 500 ;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 55px;
   color: #242331;
 }
 .sections .container .section-details div p {
@@ -313,6 +366,14 @@ color: rgba(44, 62, 80, 0.5)
  width:30%;
  margin: auto;
 }
+@media only screen and (min-width:400px) and (max-width:767px) {
+  /* .sections .container{flex-direction: column;
+  justify-content: center;} */
+  .feelbacks .feelbacks-container {
+    width: 85% !important;
+    
+  }
+}
 .contactus .section-details{
   text-align: center;
 }
@@ -336,3 +397,12 @@ footer div h6{
   font-weight: 400;
 
 }
+
+
+/* @media only screen and (min-width:440px) and (max-width:767px) {
+  
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+} */
