@@ -91,6 +91,11 @@ header .main-img div .btn-container button{
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   cursor: pointer;
+  transition:all .3s ease-in ;
+  -webkit-transition:all .3s ease-in ;
+  -moz-transition:all .3s ease-in ;
+  -ms-transition:all .3s ease-in ;
+  -o-transition:all .3s ease-in ;
 }
 header .main-img div .btn-container button:hover{
   color:rgba(255, 255, 255, 1);
@@ -229,11 +234,33 @@ header .main-img .imgs-container img{
   margin: 70px auto;
   padding: 50px 0px;
 }
-.services .btn-container {
-  margin: 32px 0 ;
-  text-align: center;
+.tab-pane.active {
+  animation: slide-down 1s ease-in-out;
+  -webkit-animation: slide-down 1s ease-in-out;
 }
-.services .btn-container button {
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(100%); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.services .btn-container {
+  margin: 32px auto;
+  text-align: center;
+  width: 50%;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.services .btn-container li{
+  /* width: 30%; */
+
+}
+.services .btn-container li a {
+  text-decoration: none;
+  cursor: pointer;
   background: #ffffff;
   padding: 8px 50px;
   margin: 0 16px;
@@ -248,9 +275,13 @@ header .main-img .imgs-container img{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  cursor: pointer;
+  transition:all .5s ease-in-out ;
+  -webkit-transition:all .5s ease-in-out ;
+  -moz-transition:all .5s ease-in-out ;
+  -ms-transition:all .5s ease-in-out ;
+  -o-transition:all .5s ease-in-out ;
 }
-.services .btn-container button.active {
+.services .btn-container li a.active {
   background-image: linear-gradient(to right, #ff1a62, #f8a013);
   color: #ffffff;
 }
@@ -259,15 +290,15 @@ header .main-img .imgs-container img{
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 .services .list ol li {
-  min-height: 100px;
+  height: 140px;
   background-color: #ffffff;
-  width: 40%;
+  width: 48%;
   padding: 20px 30px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -318,7 +349,7 @@ header .main-img .imgs-container img{
   .sections .container{flex-direction: column;
   justify-content: center;}
   .sections .container .section-details {
-    width: 85% !important;
+    width: 100% !important;
     
   }
 }
@@ -365,7 +396,7 @@ header .main-img .imgs-container img{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 25px;
   margin: 25px auto;
 
@@ -411,10 +442,13 @@ color: rgba(44, 62, 80, 0.5)
 @media only screen and (min-width:400px) and (max-width:767px) {
   /* .sections .container{flex-direction: column;
   justify-content: center;} */
+  .feelbacks .row {width: 100% !important;}
   .feelbacks .feelbacks-container {
-    width: 85% !important;
+    width: 100% !important;
     
   }
+  .feelbacks .row .section-details{width: 85%;
+  margin: 0 auto;}
 }
 .contactus .section-details{
   text-align: center;
