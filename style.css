@@ -18,7 +18,7 @@ section{
 h1 {
   font-weight: 500;
   font-size: 54px;
-  line-height: 60px;
+  line-height: 70px;
 }
 .container{
     width: 90%;
@@ -27,7 +27,7 @@ h1 {
 header {
   width: 100%;
   background-image: url("./assets/images/Subtract.png");
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
   color: #f5f8ff;
@@ -65,14 +65,24 @@ header .main-title p {
 header .main-img {
   margin-top: 5%;
 }
+header .main-img .main-container {
+  width: 60%;
+  margin:  0 auto;
+  background: url("./assets/images/Group\ 21.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+}
 header .main-img div .btn-container button{
   background: rgba(255, 255, 255, 1);
-  padding: 16px 40px;
+  padding: 16px 50px;
   margin: 0 16px;
   box-shadow: 0px 12px 9.1px 10px rgba(102, 2, 24, 0.035);
   color: rgba(0, 0, 0, 1);
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 40px;
   font-weight: 700;
   border: none;
   border-radius: 40px;
@@ -82,12 +92,12 @@ header .main-img div .btn-container button{
   -o-border-radius: 40px;
   cursor: pointer;
 }
-header .main-img div .btn-container button.apple{
+header .main-img div .btn-container button:hover{
   color:rgba(255, 255, 255, 1);
   background-color:rgba(0, 0, 0, 1) ;
 }
 header .main-img .imgs-container{
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 header .main-img .imgs-container img{
@@ -97,17 +107,26 @@ header .main-img .imgs-container img{
 .goales {
   /* margin-top: 35%; */
 }
-.goales .section-title{
-
+.goales .section-title,
+.services .section-title,
+.sections .section-title ,
+.feelbacks .section-title ,
+.contactus .section-title{
+  margin: 50px 0;
+  height: 120px;
+  background: url("./assets/images/logoIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .goales .section-title h1,
 .services .section-title h1,
 .sections .section-title h1 ,
 .feelbacks .section-title h1 ,
 .contactus .section-title h1{
-  margin-bottom: 50px;
+  padding-top: 20px;
   text-align: center;
-  background: -webkit-linear-gradient(right ,#ff1a62, #f8a013);
+  background: linear-gradient(to right,#ff1a62, #f8a013 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -143,11 +162,12 @@ header .main-img .imgs-container img{
 .goales .details-container .list .even-li {
   background-image: linear-gradient(to left, #ffffff, #fff5f5);
 }
-.goales .details-container .list li .li-marker h4,
-.services .list ol li .li-marker h4 {
+.goales .details-container .list li .li-marker span,
+.services .list ol li .li-marker span {
   color: #ff1a62;
+  width: 40px;
+  height: 40px;
   font-size: 24px;
-  line-height: 20px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -156,8 +176,11 @@ header .main-img .imgs-container img{
 }
 .goales .details-container .list li .li-marker,
 .services .list ol li .li-marker {
+  display: inline-grid;
+  text-align: center;
   background-color: #ffffff;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
   transform: rotate(45deg);
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -165,21 +188,25 @@ header .main-img .imgs-container img{
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
-.goales .details-container .list li .even {
+.goales .details-container .list li  .even {
   background-color: #fff5f5;
 }
-.goales .details-container .list li h3 {
+.goales .details-container .list li .details  {
+  width: calc(100% - 80px);
+}
+.goales .details-container .list li .details h3 {
   font-size: 20px;
   line-height: 38px;
   color: #301e1d;
 }
-.goales .details-container .list li p {
+.goales .details-container .list li .details p {
   font-size: 16px;
   line-height: 32px;
   color: #301e1d;
   opacity: 60%;
 }
 .details-img {
+  position: relative;
   width: 50%;
 }
 .details-img img {
@@ -208,7 +235,7 @@ header .main-img .imgs-container img{
 }
 .services .btn-container button {
   background: #ffffff;
-  padding: 8px 40px;
+  padding: 8px 50px;
   margin: 0 16px;
   box-shadow: 0px 12px 9.1px 10px rgba(102, 2, 24, 0.035);
   color: #301e1d;
@@ -257,10 +284,11 @@ header .main-img .imgs-container img{
   background-image: linear-gradient(to right, #ff1a62, #f8a013);
   color: #ffffff;
 }
-.services .list ol li .li-marker h4 {
+.services .list ol li .li-marker span {
   color: #ffffff;
 }
 .services .list ol li p {
+  width: 100%;
   font-size: 16px;
   line-height: 32px;
   font-weight: 500;
@@ -280,7 +308,7 @@ header .main-img .imgs-container img{
   display: flex;
   align-items: start;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 25px;
 
 }
@@ -297,11 +325,11 @@ header .main-img .imgs-container img{
 
 
 .sections .container .section-details {
-  width: 30%;
+    width: 30%;
     background-color: #F9F9F9;
     text-align: center;
     padding: 25px;
-    min-height: 300px;
+    height: 350px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -309,14 +337,11 @@ header .main-img .imgs-container img{
     -o-border-radius: 20px;
 }
 .sections .container .section-details .section-img{
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  height: 200px;
 }
 .sections .container .section-details .section-img img{
   width: 100%;
+  height: 100%;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -329,13 +354,29 @@ header .main-img .imgs-container img{
   line-height: 55px;
   color: #242331;
 }
-.sections .container .section-details div p {
+.sections .container  .section-details div p {
   color: rgba(121, 121, 121, 1);
   font-weight: 500 ;
   font-size: 14px;
   line-height: 22px;
 }
-.feelbacks .section-details{
+.feelbacks .row {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 25px;
+  margin: 25px auto;
+
+}
+.feelbacks .second {
+
+  justify-content: center;
+
+}
+.feelbacks .row .section-details{
+  width: 20%;
   display: flex;
   justify-content: flex-start;
   align-items: start;
@@ -348,13 +389,13 @@ header .main-img .imgs-container img{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.feelbacks .section-details div h4{
+.feelbacks .row .section-details div h4{
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
  color: rgba(44, 62, 80, 0.8)
 }
-.feelbacks .section-details div p{
+.feelbacks .row .section-details div p{
 font-size: 16px;
 line-height: 30px;
 font-weight: 500;
@@ -363,8 +404,9 @@ color: rgba(44, 62, 80, 0.5)
 
 }
 .feelbacks .feelbacks-container{
- width:30%;
- margin: auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start; */
 }
 @media only screen and (min-width:400px) and (max-width:767px) {
   /* .sections .container{flex-direction: column;
@@ -377,12 +419,13 @@ color: rgba(44, 62, 80, 0.5)
 .contactus .section-details{
   text-align: center;
 }
-.contactus .section-details img{
+.contactus .section-details  img{
   cursor: pointer;
+  padding: 10px;
 }
 footer{
   /* width: 100vw; */
-  background-image: linear-gradient(to right, #ff1a62, #f8a013);
+  background-image: linear-gradient(to right, #f8a013, #ff1a62);
   text-align: center;
   width: 100%;
   height: 50px; /* Adjust the height as needed */
@@ -404,7 +447,37 @@ footer div h6{
     width: 18%;
   }
 }
+ @media only screen and (min-width:440px) and (max-width:767px) {
+   .feelbacks .feelbacks-container .row{
+     flex-wrap: wrap !important;
+   }
+  .feelbacks .feelbacks-container .row .section-details{
+    width: 100% !important;
+  }
+}
 
 /* @media only screen and (min-width:768px) and (max-width:991px) {
 
 }  */
+
+.point{
+  position: absolute;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(238, 199, 238, 1), rgba(249, 190, 208, 1));
+  /* opacity: .2; */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.point-2{
+  top: 200px;
+  left: 0px;
+}
+.point-1{
+  bottom: 200px;
+  right: 0px;
+}
