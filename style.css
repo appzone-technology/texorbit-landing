@@ -595,7 +595,7 @@ footer svg {
   left: 0; */
 }
 
-footer div h6 {
+footer div {
   position: absolute;
   bottom: 0;
   right: 40%;
@@ -605,6 +605,14 @@ footer div h6 {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   z-index: 10;
+}
+
+footer div h5 {
+  margin-bottom: 5px;
+}
+
+footer div h6 {
+  font-size: 12px;
 }
 
 
