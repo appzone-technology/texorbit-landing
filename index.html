@@ -1,549 +1,557 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TexOrbit</title>
-  <link href="https://db.onlinewebfonts.com/c/a85976799f11330f194b1dc04c954666?family=Bahij+TheSansArabic+Plain"
-    rel="stylesheet" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/logoIcon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logoIcon.png"/>
+    <title>TexOrbit</title>
 
-  <link rel="stylesheet" href="style.css" />
+    <link href="https://db.onlinewebfonts.com/c/a85976799f11330f194b1dc04c954666?family=Bahij+TheSansArabic+Plain"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link id="bootstrap-css" rel="stylesheet" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" /></a>
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">ما هو TexOrbit؟</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#goales">الهدف</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">الخدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sections">الأقسام</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#feelbacks">أراء العملاء</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contactus">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"/></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navToggle" aria-controls="navToggle" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navToggle">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="What's TexOrbit?" data-ar="ما هو TexOrbit؟" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="Goals" data-ar="الأهداف" href="#goales"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="Services" data-ar="الخدمات" href="#services"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="Sections" data-ar="الأقسام" href="#sections"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="Testimonials" data-ar="أراء العملاء" href="#feelbacks"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-en="Contact Us" data-ar="تواصل معنا" href="#contactus"></a>
+                    </li>
+                </ul>
+            </div>
+            <button id="langToggle" class="d-flex btn"></button>
+        </div>
     </nav>
-    <!-- <nav>
-        <div class="nav-title">
-          <div class="img-container">
-            <img src="assets/images/logo.png" alt="logo" />
-          </div>
-        </div>
-        <div class="nav-link">
-          <a href="#"></a>
-          <a href="#goales">الهدف</a>
-          <a href="#services">الخدمات</a>
-          <a href="#sections">الأقسام</a>
-          <a href="#feelbacks">أراء العملاء</a>
-          <a href="#contactus">تواصل معنا</a>
-        </div>
-
-        <div class="nav-btn">
-                <button type="button">En</button>
-                <button type="button">تحميل</button>
-        </div> 
-      </nav> -->
 
     <div class="main-title">
-      <h1>ما هو TexOrbit</h1>
-      <p>
-        المنصة الاولي من نوعها و المتخصصة في عالم الموضة و الجمال بداية من
-        التصنيع وصولا إلي المستهلك
-      </p>
-      <br />
-      <small>علي حسب ميزانيتك حدد وجهتك</small>
+        <h1 data-en="What's TexOrbit" data-ar="ما هو TexOrbit"></h1>
+        <p data-en="The first platform of its kind specialized in the world of fashion and beauty from manufacturing to consumer"
+           data-ar="المنصة الأولي من نوعها و المتخصصة في عالم الموضة و الجمال بداية من التصنيع وصولا إلي المستهلك"></p>
+        <br/>
+        <small data-en="Your destination according your budget"
+               data-ar="علي حسب ميزانيتك حدد وجهتك"></small>
     </div>
+
     <div class="main-img">
-      <div class="main-container">
-        <div class="imgs-container">
-          <img src="assets/images/3phones.png" alt="app-phone" />
+        <div class="main-container">
+            <div class="imgs-container">
+                <img src="assets/images/3phones.png" alt="app-phone"/>
+            </div>
+            <div class="btn-container">
+                <a rel="noopener" class="apple" target="_blank"
+                   href="https://apps.apple.com/eg/app/texorbit/id6451456207">
+                    Apple Store
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+                <a rel="noopener" href="https://play.google.com/store/apps/details?id=com.tex.orbit" target="_blank">
+                    Google Play
+                    <i class="fa-brands fa-android"></i>
+                </a>
+            </div>
         </div>
-        <div class="btn-container">
-          <a rel="noopener" class="apple" target="_blank" href="https://apps.apple.com/eg/app/texorbit/id6451456207">
-            Apple Store
-            <i class="fa-brands fa-apple"></i>
-          </a>
-          <a rel="noopener" href="https://play.google.com/store/apps/details?id=com.tex.orbit" target="_blank">
-            Google Play
-            <i class="fa-brands fa-android"></i>
-          </a>
-        </div>
-      </div>
     </div>
-  </header>
-  <section id="goales" class="goales">
+</header>
+
+<section id="goales" class="goales">
     <div class="section-title">
-      <!-- <img src="assets/images/Group 10.png" alt="title"> -->
-      <h1>الهدف</h1>
+        <h1 data-en="Goals" data-ar="الأهداف"></h1>
     </div>
     <div class="container">
-      <div class="details-container">
-        <div class="list">
-          <ol>
-            <li>
-              <div class="li-marker"><span>1</span></div>
-              <div class="details">
-                <h3>الترابط والتكامل</h3>
-                <p>
-                  نهدف إلى تحقيق الترابط والتكامل في كل ما يخص عالم صناعة
-                  الموضة والجمال و تسهيل عملية التواصل بين المصنعين على مختلف
-                  مجالاتهم للوصول إلى أعلى مقاييس الجودة العالمية وذياده الفرص التصديريه
-                </p>
-              </div>
-            </li>
-            <li class="even-li">
-              <div class="li-marker even"><span>2</span></div>
-              <div class="details">
-                <h3>سهولة الوصول</h3>
-                <p>
-                  تجميع أكبر عدد من الماركات العالمية والمحلية و حتى المنتجات
-                  المصنوعة يدويا في مكان واحد و التي تمكن العملاء من سهولة
-                  الوصول إلى رغباتهم
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="li-marker"><span>3</span></div>
-              <div class="details">
-                <h3>تقديم الإستشارات الفنية</h3>
-                <p>
-                  تقديم الإستشارات الفنية المتخصصة للإرتقاء بهذا المجال عن
-                  طريق فريق من المتخصصين على أعلى درجات المهنية
-                </p>
-              </div>
-            </li>
-            <li class="even-li">
-              <div class="li-marker even"><span>4</span></div>
-              <div class="details">
-                <h3>رضا العملاء</h3>
-                <p>
-                  الوصول إلى أعلى درجات رضا العملاء عن طريق توفير كل ما يتعلق
-                  بعالم الموضة والجمال على منصة واحدة
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="li-marker"><span>5</span></div>
-              <div class="details">
-                <h3>الفرص الوظيفية</h3>
-                <p>
-                  توفير أكبر عدد من الفرص الوظيفية التي تتعلق بمختلف مجالات
-                  عالم الموضة و الجمال
-                </p>
-              </div>
-            </li>
-          </ol>
+        <div class="details-container">
+            <div class="list">
+                <ol>
+                    <li>
+                        <div class="li-marker"><span>1</span></div>
+                        <div class="details">
+                            <h3 data-en="Interdependence and complementarity" data-ar="الترابط والتكامل"></h3>
+                            <p data-en="We aim to achieve cohesion and integration in everything related to the fashion and beauty industry to facilitate the process of communication between manufacturers in their various fields to reach the highest international quality standards and maximize export opportunities."
+                               data-ar="نهدف إلى تحقيق الترابط والتكامل في كل ما يخص عالم صناعة الموضة والجمال لتسهيل عملية التواصل بين المصنعين على مختلف مجالاتهم للوصول إلى أعلى مقاييس الجودة العالمية وذياده الفرص التصديرية"></p>
+                        </div>
+                    </li>
+                    <li class="even-li">
+                        <div class="li-marker even"><span>2</span></div>
+                        <div class="details">
+                            <h3 data-en="Accessibility" data-ar="سهولة الوصول"></h3>
+                            <p data-en="acummulating the largest number of international and local brands and even handmade products in one place that enables customers to have easy access to their desires."
+                               data-ar="تجميع أكبر عدد من الماركات العالمية والمحلية و حتى المنتجات المصنوعة يدويا في مكان واحد و التي تمكن العملاء من سهولة الوصول إلى رغباتهم"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>3</span></div>
+                        <div class="details">
+                            <h3 data-en="Technical Consulting" data-ar="تقديم الإستشارات الفنية"></h3>
+                            <p data-en="Providing specialized technical consultations to upgrade this field through a team of qualified specialists."
+                               data-ar="تقديم الإستشارات الفنية المتخصصة للإرتقاء بهذا المجال عن طريق فريق من المتخصصين على أعلى درجات المهنية"></p>
+                        </div>
+                    </li>
+                    <li class="even-li">
+                        <div class="li-marker even"><span>4</span></div>
+                        <div class="details">
+                            <h3 data-en="Customer satisfaction" data-ar="رضا العملاء"></h3>
+                            <p data-en="achieving the highest levels of customer satisfaction by providing everything related to the world of fashion and beauty on a single platform"
+                               data-ar="الوصول إلى أعلى درجات رضا العملاء عن طريق توفير كل ما يتعلق بعالم الموضة والجمال على منصة واحدة"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>5</span></div>
+                        <div class="details">
+                            <h3 data-en="Career opportunities" data-ar="الفرص الوظيفية"></h3>
+                            <p data-en="Providing as many career opportunities as possible that is related to to the various fields of the fashion and beauty industry"
+                               data-ar="توفير أكبر عدد من الفرص الوظيفية التي تتعلق بمختلف مجالات عالم الموضة و الجمال"></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="details-img">
+                <span class="point point-1"></span>
+                <span class="point point-2"></span>
+                <!-- <div class="goales-img"> -->
+                <img src="assets/images/Group 12.png" alt="TEX ORBIT"/>
+            </div>
+            <!-- </div> -->
         </div>
-        <div class="details-img">
-          <span class="point point-1"></span>
-          <span class="point point-2"></span>
-          <!-- <div class="goales-img"> -->
-          <img src="assets/images/Group 12.png" alt="TEX ORBIT" />
-        </div>
-        <!-- </div> -->
-      </div>
     </div>
-  </section>
-  <section id="services" class="services">
+</section>
+
+<section id="services" class="services">
     <svg viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 25.5C0 25.5 583.972 82.0258 959.5 82C1335.42 81.9742 1920 25.5 1920 25.5V0.5H0V25.5Z" fill="white" />
+        <path d="M0 25.5C0 25.5 583.972 82.0258 959.5 82C1335.42 81.9742 1920 25.5 1920 25.5V0.5H0V25.5Z" fill="white"/>
     </svg>
     <div class="section-title">
-      <h1>الخدمات</h1>
+        <h1 data-en="Services" data-ar="الخدمات"></h1>
     </div>
     <ul class="nav nav-tabs nav-justified btn-container" role="tablist">
-      <li class="" role="presentation">
-        <a class="active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab"
-          aria-controls="justified-tabpanel-0" aria-selected="true">المتاجر و المصنعين</a>
-      </li>
-      <li class="" role="presentation">
-        <a class="" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab"
-          aria-controls="justified-tabpanel-1" aria-selected="false">العملاء</a>
-      </li>
-      <li class="" role="presentation">
-        <a class="" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab"
-          aria-controls="justified-tabpanel-2" aria-selected="false">الوظائف</a>
-      </li>
+        <li class="" role="presentation">
+            <a class="active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab"
+               aria-controls="justified-tabpanel-0" aria-selected="true" data-en="Stores and Manufacturers"
+               data-ar="المتاجر و المصنعين"></a>
+        </li>
+        <li class="" role="presentation">
+            <a class="" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab"
+               aria-controls="justified-tabpanel-1" data-en="Clients" data-ar="العملاء" aria-selected="false"></a>
+        </li>
+        <li class="" role="presentation">
+            <a class="" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab"
+               aria-controls="justified-tabpanel-2" data-en="Jobs" data-ar="الوظائف" aria-selected="false"></a>
+        </li>
     </ul>
     <div class="tab-content pt-5" id="tab-content">
-      <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
-        <div class="list">
-          <ol>
-            <li>
-              <div class="li-marker"><span>1</span></div>
-              <p>
-                المساهمه في تطوير الصناعه وذياده الفرص التصديريه عن طريق إيجاد حلول عمليه للتغلب علي المشاكل التي تاثر
-                علي جوده المنتج عن طريق تقديم الدعم الفني / الدعم المادي <small
-                  style="font-size: 10px; color: #ff1a62; margin-right: 10px;">طبقا لاحكام الشريعه الاسلاميه</small>
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>2</span></div>
-              <p>
-                عمل حساب تفصيلي عن النشاط ويمكن ربطه بجميع وسائل التواصل
-                والدعاية.
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>3</span></div>
-              <p>
-                تقديم مساحة إعلانية للمنتجات كما تسهل على العملاء إمكانية
-                الوصول إلى ( حسابات التواصل الإجتماعى / البريد الإلكترونى /
-                الإتصال التليفوني / الموقع الجغرافي / تطبيق الموبايل الخاص )
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>4</span></div>
-              <p>
-                تقديم محرك بحث متطور ومتميز يعتمد على خاصية الذكاء الاصطناعي
-                يوفر للعملا، سهولة الوصول إلى رغباتهم
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>5</span></div>
-              <p>زيادة فرصة ظهور المنتجات إلى عدد أكبر من العملاء .</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>6</span></div>
-              <p>
-                تقديم إشعارات تنبيهية عن عدد مشاهدات الإعلان و إعجاب العملاء
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>7</span></div>
-              <p>تقديم أفضل تصنيف للمنتجات والمتاجر على الإنترنت</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>8</span></div>
-              <p>
-                تقديم الإستشارات الفنية في مختلف مجالات تصنيع الموضة و الجمال
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>9</span></div>
-              <p>
-                تسهيل عملية التواصل بين المصنعين على مختلف مجالاتهم للوصول إلى
-                أقل تكلفة للمنتج مع الحفاظ على أعلى مقاييس الجودة العالمية
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>10</span></div>
-              <p>توفير اكبر عدد من المنتجات التي تناسب العميل .</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>11</span></div>
-              <p>إمكانية النشر او البحث عن الوظائف المطلوبة في متجرك أو مصنعك</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>12</span></div>
-              <p>
-                إمكانية عرض المنتجات بصور عالية الجودة أو تقديم الفيديوهات
-              </p>
-            </li>
-            <!-- عملاء -->
-
-            <!-- الوظايف -->
-
-            <!-- متاجر ومصنعين -->
-            <li>
-              <div class="li-marker"><span>13</span></div>
-              <p>إمكانية إضافة المنتج الواحد في أكثر من تصنيف .</p>
-            </li>
-            <!-- عملاء -->
-
-            <!-- الوظايف -->
-
-            <!-- متاجر ومصنعين -->
-            <li>
-              <div class="li-marker"><span>14</span></div>
-              <p>
-                سهوله الوصول الي متجرك او مصنعك من خلال محرك بحث متخصص بالمدن
-                .
-              </p>
-            </li>
-            <!-- عملاء -->
-            <li>
-              <div class="li-marker"><span>15</span></div>
-              <p>
-                إمكانيه مشاهده ومتباعه المناقصات والطلبيات.
-              </p>
-            </li>
-          </ol>
+        <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
+            <div class="list">
+                <ol>
+                    <li>
+                        <div class="li-marker"><span>1</span></div>
+                        <p data-en="Contribution to the development of this industry and increasing export opportunities by finding practical solutions to overcome issues that affect product quality by providing technical support / material support."
+                           data-ar="المساهمه في تطوير الصناعه وذياده الفرص التصديرية عن طريق إيجاد حلول عمليه للتغلب علي المشاكل التي تؤثر علي جوده المنتج عن طريق تقديم الدعم الفني / الدعم المادي">
+                            <small data-en="In accordance with the provisions of Islamic law"
+                                   data-ar="طبقا لأحكام الشريعة الإسلامية"
+                                   style="font-size: 10px; color: #ff1a62; margin-right: 10px;"></small>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>2</span></div>
+                        <p data-en="Creating a detailed account for the activity that can be linked to all communication and social media"
+                           data-ar="عمل حساب تفصيلي عن النشاط ويمكن ربطه بجميع وسائل التواصل والدعاية."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>3</span></div>
+                        <p data-en="Provide advertising space for products and make it easy for customers to access (social media accounts / email / phone call / geo-location / mobile app)."
+                           data-ar="تقديم مساحة إعلانية للمنتجات كما تسهل على العملاء الوصول إلى ( حسابات التواصل الإجتماعى / البريد الإلكترونى / الإتصال التليفوني / الموقع الجغرافي / تطبيق الموبايل الخاص )."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>4</span></div>
+                        <p data-en="Introducing an advanced and distinctive AI-based search engine that facilitates easy access for customers to find what they want."
+                           data-ar="تقديم محرك بحث متطور ومتميز يعتمد على خاصية الذكاء الاصطناعي يسهل للعملاء سهولة الوصول إلى رغباتهم"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>5</span></div>
+                        <p data-en="Increase the chance of products visibility."
+                           data-ar="زيادة فرصة ظهور المنتجات إلى عدد أكبر من العملاء."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>6</span></div>
+                        <p data-en="Provide push notifications for ad views and customer likes"
+                           data-ar="تقديم إشعارات تنبيهية عن عدد مشاهدات الإعلان و إعجاب العملاء"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>7</span></div>
+                        <p data-en="Provide the best categorization of products and stores on internet."
+                           data-ar="تقديم أفضل تصنيف للمنتجات والمتاجر علي الإنترنت"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>8</span></div>
+                        <p data-en="Providing technical consultations in all various fields of the fashion and beauty industry"
+                           data-ar="تقديم الإستشارات الفنية في مختلف مجالات تصنيع الموضة و الجمال"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>9</span></div>
+                        <p data-en="Facilitate the process of communication between manufacturers in all various fields to reach the lowest product cost while maintaining the highest international quality standards"
+                           data-ar="تسهيل عملية التواصل بين المصنعين على مختلف مجالاتهم للوصول إلي أقل تكلفة للمنتج مع الحفاظ على أعلى مقاييس الجودة العالمية"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>10</span></div>
+                        <p data-en="Providing the widest range of products to suit customers"
+                           data-ar="توفير أكبر عدد من المنتجات التي تناسب العملاء"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>11</span></div>
+                        <p data-en="Ability to post or search for jobs of interest"
+                           data-ar="إمكانية النشر او البحث عن الوظائف المطلوبة في المجال"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>12</span></div>
+                        <p data-en="Ability to present products with high-quality images or videos"
+                           data-ar="إمكانية عرض المنتجات بصور عالية الجودة أو تقديم الفيديوهات"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>13</span></div>
+                        <p data-en="The ability to add the same product in more than one category."
+                           data-ar="إمكانية إضافة المنتج الواحد في أكثر من تصنيف."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>14</span></div>
+                        <p data-en="Easy access to your store or factory through a specialized city search engine."
+                           data-ar="سهوله الوصول الي متجرك او مصنعك من خلال محرك بحث متخصص بالمدن."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>15</span></div>
+                        <p data-en="The ability to view and follow bids and orders."
+                           data-ar="إمكانيه مشاهده ومتباعه المناقصات والطلبيات."></p>
+                    </li>
+                </ol>
+            </div>
         </div>
-      </div>
-      <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">
-        <div class="list">
-          <ol>
-            <li>
-              <div class="li-marker"><span>1</span></div>
-              <p>
-                تقديم محرك بحث متطور ومتميز يعتمد على خاصية الذكاء الاصطناعي
-                يوفر للعملا، سهولة الوصول إلى رغباتهم
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>2</span></div>
-              <p>زيادة فرصة ظهور المنتجات إلى عدد أكبر من العملاء .</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>3</span></div>
-              <p>
-                تقديم إشعارات تنبيهية عن عدد مشاهدات الإعلان و إعجاب العملاء
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>4</span></div>
-              <p>تقديم أفضل تصنيف للمنتجات والمتاجر على الإنترنت</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>5</span></div>
-              <p>توفير اكبر عدد من المنتجات التي تناسب العميل .</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>6</span></div>
-              <p>إمكانية مشاهده المنتجات بصور عالية الجودة أو الفيديوهات</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>7</span></div>
-              <p>إمكانية البحث عن المنتج الواحد في أكثر من تصنيف .</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>8</span></div>
-              <p>
-                إمكانية البحث عن المنتجات او المتاجر من خلال محرك بحث متخصص
-                بالمدن او عن طريق الموقع الجغرافي .
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>9</span></div>
-              <p>
-                إمكانية عمل متابعه لحسابات المصانع أو المتاجر.
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>10</span></div>
-              <p>
-                إمكانية التواصل مع المحلات والمتاجر بصوره مباشره وطلب المنتجات.
-              </p>
-            </li>
-            <li>
-              <div class="li-marker"><span>11</span></div>
-              <p>
-                إمكانية إنشاء مناقصه / طلبيه لمجموعه من المنتجات ومتابعتها خطوه بخطوه حتي التسليم النهائي.
-              </p>
-            </li>
-          </ol>
+        <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">
+            <div class="list">
+                <ol>
+                    <li>
+                        <div class="li-marker"><span>1</span></div>
+                        <p data-en="Introducing an advanced, AI-powered search engine that provides customers with easy access to their desires"
+                           data-ar="تقديم محرك بحث متطور ومتميز يعتمد على خاصية الذكاء الاصطناعي يوفر للعملاء سهولة الوصول إلى رغباتهم"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>2</span></div>
+                        <p data-en="Increase the chance of products visibility to a larger number of customers."
+                           data-ar="زيادة فرصة ظهور المنتجات إلى عدد أكبر من العملاء."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>3</span></div>
+                        <p data-en="Provide push notifications for ad views and customer likes "
+                           data-ar="تقديم إشعارات تنبيهية عن عدد مشاهدات الإعلان و إعجاب العملاء"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>4</span></div>
+                        <p data-en="Provide the best categorization of products and online stores"
+                           data-ar="تقديم أفضل تصنيف للمنتجات والمتاجر على الإنترنت"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>5</span></div>
+                        <p data-en="Providing the largest number of products that suit the customer."
+                           data-ar="توفير اكبر عدد من المنتجات التي تناسب العميل."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>6</span></div>
+                        <p data-en="Ability to view products with high-quality images or videos"
+                           data-ar="إمكانية مشاهده المنتجات بصور عالية الجودة أو الفيديوهات"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>7</span></div>
+                        <p data-en="The ability to search for a single product in more than one category."
+                           data-ar="إمكانية البحث عن المنتج الواحد في أكثر من تصنيف."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>8</span></div>
+                        <p data-en="The ability to search for products or stores through a search engine specialized in cities or by geographical location."
+                           data-ar="إمكانية البحث عن المنتجات او المتاجر من خلال محرك بحث متخصص بالمدن او عن طريق الموقع الجغرافي."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>9</span></div>
+                        <p data-en="Ability to follow up on factory or store accounts."
+                           data-ar="إمكانية عمل متابعه لحسابات المصانع أو المتاجر."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>10</span></div>
+                        <p data-en="The ability to communicate with stores and shops directly and order products."
+                           data-ar="إمكانية التواصل مع المحلات والمتاجر بصوره مباشره وطلب المنتجات."></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>11</span></div>
+                        <p data-en="Ability to create a tender/order for a group of products and follow it step by step until final delivery."
+                           data-ar="إمكانية إنشاء مناقصه / طلبيه لمجموعه من المنتجات ومتابعتها خطوه بخطوه حتي التسليم النهائي."></p>
+                    </li>
+                </ol>
+            </div>
         </div>
-      </div>
-      <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
-        <div class="list">
-          <ol>
-            <!-- متاجر ومصنعين -->
-            <!-- الوظايف -->
-            <li>
-              <div class="li-marker"><span>1</span></div>
-              <p>إمكانية عمل حساب وظيفي يتضمن المهارات والخبرات مصحوبا بالصور عاليه الجوده و الفيديوهات</p>
-            </li>
-            <li>
-              <div class="li-marker"><span>2</span></div>
-              <p>إمكانية النشر او البحث عن الوظائف المطلوبة في متجرك أو مصنعك</p>
-            </li>
-            <!-- الوظايف -->
-            <li>
-              <div class="li-marker"><span>3</span></div>
-              <p>
-                إمكانية إرفاق المواهب او المهارات بصور عالية الجودة أو
-                الفيديوهات
-              </p>
-            </li>
-            <!-- الوظايف -->
-            <li>
-              <div class="li-marker"><span>4</span></div>
-              <p>عرض جميع إعلانات الوظائف متاحه أو مطلوبه</p>
-            </li>
-          </ol>
+        <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
+            <div class="list">
+                <ol>
+                    <li>
+                        <div class="li-marker"><span>1</span></div>
+                        <p data-en="Ability to create a career profile that includes skills and experience with high-quality photos and videos."
+                           data-ar="إمكانية عمل حساب وظيفي يتضمن المهارات والخبرات مصحوبا بالصور عاليه الجوده و الفيديوهات"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>2</span></div>
+                        <p data-en="Ability to post or search for jobs in your store or factory"
+                           data-ar="إمكانية النشر او البحث عن الوظائف المطلوبة في متجرك أو مصنعك"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>3</span></div>
+                        <p data-en="Ability to attach talents or skills to high-quality images or videos"
+                           data-ar="إمكانية إرفاق المواهب او المهارات بصور عالية الجودة أو الفيديوهات"></p>
+                    </li>
+                    <li>
+                        <div class="li-marker"><span>4</span></div>
+                        <p data-en="View all available or wanted job postings"
+                           data-ar="عرض جميع إعلانات الوظائف متاحه أو مطلوبه"></p>
+                    </li>
+                </ol>
+            </div>
         </div>
-      </div>
     </div>
     <svg viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
-        fill="white" />
+        <path
+                d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
+                fill="white"/>
     </svg>
-  </section>
-  <section id="sections" class="sections">
+</section>
+
+<section id="sections" class="sections">
     <div class="section-title">
-      <h1>الأقسام</h1>
+        <h1 data-en="Sections" data-ar="الأقسام"></h1>
     </div>
     <div class="container">
-      <div class="section-details">
-        <div class="section-img">
-          <img src="assets/images/Fashion.png" alt="الموضة" />
+        <div class="section-details">
+            <div class="section-img">
+                <img src="assets/images/Fashion.png" alt="Al-Moda"/>
+            </div>
+            <div>
+                <h2 data-en="Fashion & Beauty" data-ar="الموضة و الجمال"></h2>
+                <p data-en="View all the latest clothes, shoes and fashion trends"
+                   data-ar="عرض كل ما يخص الموضة من ملابس و أحذية و أخر صيحات الموضة"></p>
+                <p data-en="View all cosmetics, skincare and hair care products"
+                   data-ar="عرض كل ما يخص مستحضرات التجميل و العناية بالبشرة و الشعر"></p>
+            </div>
         </div>
-        <div>
-          <h2>الموضة و الجمال</h2>
-          <p>عرض كل ما يخص الموضة من ملابس و أحذية و أخر صيحات الموضة</p>
-          <p>عرض كل ما يخص مستحضرات التجميل و العناية بالبشرة و الشعر</p>
+        <div class="section-details">
+            <div class="section-img">
+                <img src="assets/images/Industry.png" alt="manufacturer"/>
+            </div>
+            <div>
+                <h2 data-en="Trade and Industry" data-ar="التجارة و الصناعة"></h2>
+                <p data-en="View all things related to industry, supplies, import and export"
+                   data-ar="عرض كل ما يخص الصناعة و مستلزماتها والاستيراد والتصدير"></p>
+            </div>
         </div>
-      </div>
-      <div class="section-details">
-        <div class="section-img">
-          <img src="assets/images/Industry.png" alt="الصناعة" />
+        <div class="section-details">
+            <div class="section-img">
+                <img src="assets/images/Carpets.png" alt="سجاد"/>
+            </div>
+            <div>
+                <h2 data-en="Carpets & Furnishings" data-ar="سجاد و مفروشات"></h2>
+                <p data-en="View all things related to carpets of different types and sizes"
+                   data-ar="عرض كل ما يخص السجاد بأنواعه و مقاسته المختلفة"></p>
+                <p data-en="View all types, sizes, and models of furnishings"
+                   data-ar="عرض كل ما يخص المفروشات بأنواعها و مقاساتها و مختلف موديلاتها"></p>
+            </div>
         </div>
-        <!-- صوره تدل علي ماكينات الغزل والنسيج -->
-        <div>
-          <h2>التجارة و الصناعة</h2>
-          <p>عرض كل ما يخص الصناعة و مستلزماتها والاستيراد والتصدير</p>
-        </div>
-      </div>
-      <div class="section-details">
-        <div class="section-img">
-          <img src="assets/images/Carpets.png" alt="سجاد" />
-        </div>
-        <div>
-          <h2>سجاد و مفروشات</h2>
-          <p>عرض كل ما يخص السجاد بأنواعه و مقاسته المختلفة</p>
-          <p>عرض كل ما يخص المفروشات بأنواعها و مقاساتها و مختلف موديلاتها</p>
-        </div>
-      </div>
     </div>
-  </section>
-  <section id="feelbacks" class="feelbacks">
+</section>
+
+<section id="feelbacks" class="feelbacks">
     <svg viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 25.5C0 25.5 583.972 82.0258 959.5 82C1335.42 81.9742 1920 25.5 1920 25.5V0.5H0V25.5Z" fill="white" />
+        <path d="M0 25.5C0 25.5 583.972 82.0258 959.5 82C1335.42 81.9742 1920 25.5 1920 25.5V0.5H0V25.5Z" fill="white"/>
     </svg>
     <div class="section-title">
-      <h1>أراء العملاء</h1>
+        <h1 data-en="Testimonials" data-ar="أراء العملاء"></h1>
     </div>
     <div class="feelbacks-container">
-      <div class="row">
-        <div class="section-details">
-          <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="صورة" />
-          <div>
-            <div>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
+        <div class="row">
+            <div class="section-details">
+                <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="Person"/>
+                <div>
+                    <div>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                    </div>
+                    <p data-en="A different perspective on the world of beauty and fashion"
+                       data-ar="رؤيه مختلفه ومتميزه لعالم الجمال والموضة"></p>
+                    <h4 data-en="Mahmoud Mohammed Zaidan" data-ar="محمود محمد ذيدان"></h4>
+                </div>
             </div>
-            <p>رؤيه مختلفه ومتميزه لعالم الجمال والموضه</p>
-            <h4>محمود محمد ذيدان</h4>
-          </div>
-        </div>
-        <div class="section-details">
-          <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="صورة" />
-          <div>
-            <div>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
+            <div class="section-details">
+                <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="Person"/>
+                <div>
+                    <div>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                    </div>
+                    <p data-en="Financing that actually conforms to Islamic law"
+                       data-ar="تمويل يطابق الشريعه الاسلاميه فعلا"></p>
+                    <h4 data-en="Abdul Hamid al-Orabi" data-ar="عبد الحميد العرابي"></h4>
+                </div>
             </div>
-            <p>تمويل يطابق الشريعه الاسلاميه فعلا</p>
-            <h4>عبد الحميد العرابي</h4>
-          </div>
-        </div>
-        <div class="section-details">
-          <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="صورة" />
-          <div>
-            <div>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
+            <div class="section-details">
+                <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="Person"/>
+                <div>
+                    <div>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                    </div>
+                    <p data-en="Effective search engine" data-ar="محرك بحث فعال"></p>
+                    <h4 data-en="Mahmoud Youssef" data-ar="محمود يوسف"></h4>
+                </div>
             </div>
-            <p>محرك بحث فعال </p>
-            <h4>محمود يوسف</h4>
-          </div>
-        </div>
-        <div class="section-details">
-          <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="صورة" />
-          <div>
-            <div>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
-              <i class="text-warning fa-solid fa-star"></i>
+            <div class="section-details">
+                <img class="rounded-circle" src="assets/images/Ellipse-feel1.png" alt="Person"/>
+                <div>
+                    <div>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                    </div>
+                    <p data-en="A distinguished group of merchants and shops"
+                       data-ar="مجموعه متميزه من التجار والمحلات"></p>
+                    <h4 data-en="Mustafa Salem" data-ar="مصطفي سالم"></h4>
+                </div>
             </div>
-            <p>مجموعه متميزه من التجار والمحلات</p>
-            <h4>مصطفي سالم</h4>
-          </div>
         </div>
-      </div>
-      <div class="row second">
+        <div class="row second">
 
-      </div>
+        </div>
     </div>
     <svg viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
-        fill="white" />
+        <path d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
+              fill="white"/>
     </svg>
-  </section>
-  <section id="contactus" class="contactus">
+</section>
+
+<section id="contactus" class="contactus">
     <div class="section-title">
-      <h1>تواصل معنا</h1>
+        <h1 data-en="Contact us" data-ar="تواصل معنا"></h1>
     </div>
     <div class="section-details">
-      <img src="assets/images/instagram.png" alt="صورة" />
-      <a href="https://www.facebook.com/share/18MfHCYYLG/?mibextid=wwXIfr" target="_blank"
-        rel="noopener noreferrer"><img src="assets/images/facebook.png" alt="صورة" /></a>
-      <a href="mailto:texhub.develop@gmail.com"><img src="assets/images/gmail.png" alt="صورة" /></a>
-      <a href="https://wa.me/+201501380806"><img src="assets/images/whatsapp.png" alt="صورة" /></a>
-      <a href="tel:+201501380806"><img src="assets/images/call.png" alt="صورة" /></a>
+        <img src="assets/images/instagram.png" alt="img"/>
+        <a href="https://www.facebook.com/share/18MfHCYYLG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/facebook.png" alt="img"/>
+        </a>
+        <a href="mailto:texhub.develop@gmail.com"><img src="assets/images/gmail.png" alt="img"/></a>
+        <a href="https://wa.me/+201501380806"><img src="assets/images/whatsapp.png" alt="img"/></a>
+        <a href="tel:+201501380806"><img src="assets/images/call.png" alt="img"/></a>
     </div>
-  </section>
-  <footer>
+</section>
+
+<footer>
     <div>
-      <h5>جميع الحقوق محفوظة TexOrbit</h5>
-      <h6>الرقم الضريبي ٢٠٤-٦٣٩-٧٦٨</h6>
+        <h5 data-en="© 2024 TexOrbit. All rights reserved." data-ar="© ٢٠٢٤ TexOrbit. جميع الحقوق محفوظة."></h5>
+        <h6 data-en="Tax No. 768-639-204" data-ar="الرقم الضريبي ٢٠٤-٦٣٩-٧٦٨"></h6>
     </div>
     <svg viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
-        fill="url(#paint0_linear_52_700)" />
-      <defs>
-        <linearGradient id="paint0_linear_52_700" x1="1873.17" y1="74.3088" x2="1732.61" y2="-457.741"
-          gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FF1A62" />
-          <stop offset="1" stop-color="#F8A013" />
-        </linearGradient>
-      </defs>
+        <path
+                d="M1920 56.5C1920 56.5 1336.03 -0.0257531 960.5 8.80314e-06C584.583 0.0257974 0 56.5 0 56.5V81.5H1920V56.5Z"
+                fill="url(#paint0_linear_52_700)"/>
+        <defs>
+            <linearGradient id="paint0_linear_52_700" x1="1873.17" y1="74.3088" x2="1732.61" y2="-457.741"
+                            gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF1A62"/>
+                <stop offset="1" stop-color="#F8A013"/>
+            </linearGradient>
+        </defs>
     </svg>
-  </footer>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/main.js"></script>
+</footer>
+
+<!--  A Script to flip data and content from Arabic to English  -->
+<script>
+    function updateBootstrapLink(isRTL) {
+        const bootstrapLink = document.getElementById("bootstrap-css");
+        if (isRTL) {
+            bootstrapLink.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.rtl.min.css";
+            bootstrapLink.integrity = "sha384-q8+l9TmX3RaSz3HKGBmqP2u5MkgeN7HrfOJBLcTgZsQsbrx8WqqxdA5PuwUV9WIx";
+        } else {
+            bootstrapLink.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css";
+            bootstrapLink.integrity = "sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7";
+        }
+    }
+
+    function loadContent(isRTL) {
+
+        // Toggle direction and lang attribute
+        html.setAttribute("dir", isRTL ? "rtl" : "ltr");
+        html.setAttribute("lang", isRTL ? "ar" : "en");
+
+        // Change button text
+        toggleBtn.textContent = isRTL ? "English" : "العربية";
+
+        // Swap content
+        document.querySelectorAll("[data-ar]").forEach(el => {
+            el.textContent = isRTL ? el.getAttribute("data-ar") : el.getAttribute("data-en");
+        });
+    }
+
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById("langToggle");
+    let isRTL = html.getAttribute("dir") === "rtl";
+
+    updateBootstrapLink(isRTL)
+    loadContent(isRTL);
+
+
+    toggleBtn.addEventListener("click", () => {
+        isRTL = !isRTL;
+
+        updateBootstrapLink(isRTL);
+        loadContent(isRTL);
+    });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
