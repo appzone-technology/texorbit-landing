@@ -465,10 +465,6 @@ header .main-img .imgs-container img {
     -o-border-radius: 20px;
 }
 
-.sections .container .section-details .section-img {
-    height: 200px;
-}
-
 .sections .container .section-details .section-img img {
     width: 100%;
     height: 100%;
@@ -574,6 +570,8 @@ header .main-img .imgs-container img {
 .contactus .section-details img {
     cursor: pointer;
     padding: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 footer {
